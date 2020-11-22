@@ -1,0 +1,106 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color:white;
+	font-family : Verdana;
+	font-size:14px;
+	
+}
+#menu #header{
+	display: inline;
+}
+#menu{ display:inline; }
+#header{
+	background : #1f6f8b;
+	text-align : left;
+	color:white;
+	font-size: 200%;
+	font-weight:bold;
+	padding:30px;
+	border-radius:10px;
+}
+#menu ul{
+	background : black;
+	text-align : right;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+	margin-top:10px;
+	list-style-type:none;
+	font-size:110%;
+	margin-bottom:0px;
+}
+
+
+summary::-webkit-details-marker {
+  display: none
+}
+#menu{
+	display:inline;
+}
+#dropmenu{
+	display:none;
+}
+#menu ul li a{
+	color:white;
+	text-decoration:none;
+	padding-left:30px;
+	padding-right:30px;
+	transition:1s;
+}
+
+
+
+#menu ul li a:hover{
+	background:white;
+	color:black;
+	border-radius:10px;
+	font-size:130%;
+	transition:1s;
+}
+#menu ul li :hover #dropmenu{
+	display:block;
+	position:absolute;
+	background:black;
+	color:white;
+	margin-top:15px;
+	margin-left:15px;
+}
+#footer{
+	background : #1f6f8b;
+	text-align : center;
+	color:white;
+	
+	padding:10px;
+	margin-top:10px;
+	border-radius:10px;
+	clear:both;
+}
+
+#shoetabs{
+	width : 100%;
+	padding: 0;
+}
+
+.card{
+	background:#fff5e3;
+	padding:20px;
+	margin-top:10px;
+	border-radius:10px;
+}
+.card img{
+	height:100%;
+	border-radius:10px;
+}
+h1{
+	color:#b80000;
+	font-size:120%;
+}
+@media screen and (max-width:800px)
+{
+
+	#menu{
+		display:none;
+	}
+}

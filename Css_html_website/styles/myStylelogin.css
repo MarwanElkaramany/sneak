@@ -1,0 +1,27 @@
+body{
+	background-color:#99A8B2;
+}
+#menu ul{
+	background : black;
+	text-align : left;
+	color:white;
+	padding:10px;
+	border-radius:10px;
+	margin-top:10px;
+	list-style-type:none;
+	font-size:110%;
+	margin-bottom:0px;
+}
+#menu ul li{
+	display: inline;
+}
+#menu ul li a{
+	color:white;
+	text-decoration:none;
+	padding-left:30px;
+	padding-right:30px;
+	transition:1s;
+}
+form{
+	padding-bottom:20px;
+}
