@@ -5,7 +5,7 @@ body{
 	background-color:white;
 	font-family : Verdana;
 	font-size:14px;
-	
+
 }
 #menu #header{
 	display: inline;
@@ -71,7 +71,7 @@ summary::-webkit-details-marker {
 	background : #1f6f8b;
 	text-align : center;
 	color:white;
-	
+
 	padding:10px;
 	margin-top:10px;
 	border-radius:10px;
@@ -89,6 +89,10 @@ summary::-webkit-details-marker {
 	margin-top:10px;
 	border-radius:10px;
 }
+.shoes{
+	display: inline;
+}
+
 .card img{
 	height:100%;
 	border-radius:10px;
