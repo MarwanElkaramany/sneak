@@ -7,7 +7,7 @@ body{
 	font-size:14px;
 
 }
-#menu #header{
+#menu,.list {
 	display: inline;
 }
 #menu{ display:inline; }
@@ -20,9 +20,15 @@ body{
 	padding:30px;
 	border-radius:10px;
 }
-#menu ul{
+.list{
+	text-align: left;
+	font-size: 60%;
+	display:inline;
+}
+#header ul{
+
 	background : black;
-	text-align : right;
+	text-align : left;
 	color:white;
 	padding:10px;
 	border-radius:10px;
@@ -36,9 +42,7 @@ body{
 summary::-webkit-details-marker {
   display: none
 }
-#menu{
-	display:inline;
-}
+
 #dropmenu{
 	display:none;
 }
@@ -77,7 +81,9 @@ summary::-webkit-details-marker {
 	border-radius:10px;
 	clear:both;
 }
-
+#header ul a:#name {
+	text-align: left;
+}
 #shoetabs{
 	width : 100%;
 	padding: 0;
