@@ -10,7 +10,7 @@ body{
 
 }
 #name{
-	color:black;
+	color:white;
 	font-size:200%;
 	float: left;
 }
@@ -19,8 +19,12 @@ body{
 	float: right;
 	margin-bottom: 20px;
 }
+video{
+	box-sizing: inherit;
+	height: 750px;
+}
 #header{
-	background : #1f6f8b;
+	background : grey;
 	color:white;
 	font-size: 200%;
 	font-weight:bold;
