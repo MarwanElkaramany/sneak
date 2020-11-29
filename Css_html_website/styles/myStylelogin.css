@@ -1,5 +1,14 @@
+*{
+	padding:5px;
+}
 body{
-	background-color:#99A8B2;
+	background: url("../images/shoesbackground.jpg");
+	background-size:cover;
+
+}
+#register{
+	background:white;
+	
 }
 #menu ul{
 	background : black;
