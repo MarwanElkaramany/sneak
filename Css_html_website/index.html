@@ -7,34 +7,41 @@
 		<meta name="description" content="Text,Website">
 		<meta name="viewport" content="width=device-width, initial-scale:1.0">
 
-		<link rel="stylesheet" href="styles/myStyle.css"
+		<link rel="stylesheet" href="styles/myStyle.css">
 
-	<script>
+		<script>
 
-	</script>
+			function openNav() {
+		  	document.getElementById("mySidenav").style.width = "250px";
+			}
 
+			function closeNav() {
+		  	document.getElementById("mySidenav").style.width = "0";
+			}
+
+		</script>
 	</head>
 
+
+
 	<body>
+
+		<h1 id="name">	SNEAK</h1>
+
+		<div id="floatingMenu">
+			<a href="about.html"> <img src="images/floatbutton.png" onclick="openNav()"></a>
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="login.html">Login</a>
+			<a href="register.html">Register</a>
+			<a href="contact.html">Contact us</a>
+			<a href="about.html">about</a>
+		</div>
+
 		<div id="header">
-
-
-			<ul>
-			<a id="name">	SNEAK</a>
-				<li class="list"><a href="index.html"> Home</a></li>
-				<li class="list"><a href="#"> Login</a>
-				<div id="dropmenu">
-					<ul>
-					<li><a href="login.html"> Login</a></li>
-					<li><a href="register.html"> Register</a></li>
-					</ul>
-				</div>
-				</li>
-				<li class="list"><a href="registeration.html"> Registeration</a></li>
-				<li class="list"><a href="contact.html"> Contact us</a></li>
-				<li class="list"><a href="about.html"> about</a></li>
-
-			</ul>
 
 		</div>
 
@@ -43,51 +50,51 @@
 				<div class="card">
 					<h1>ADIDAS</h1>
 					<p>Adidas part for shoes</p>
-					<div class="shoes">
-						<img src="images/adidas.jpg">
-					</div>
-					<div class="shoes">
-						<img src="images/adidas.jpg">
-					</div>
-				</div>
-				<div class="card">
-					<h1>NIKE</h1>
-					<p>Nike part for shoes</p>
-					<div class="shoes">
-						<img src="images/Nike.jpg">
-					</div>
-					<div class="shoes">
-						<img src="images/nike.jpg">
-					</div>
-				</div>
-				<div class="card">
-					<h1>ADIDAS</h1>
-					<p>Adidas part for shoes</p>
-					<div class="shoes">
-						<img src="images/adidas.jpg">
-					</div>
-					<div class="shoes">
-						<img src="images/adidas.jpg">
+					<div class="scrollmenu">
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
 					</div>
 				</div>
 				<div class="card">
 					<h1>NIKE</h1>
 					<p>Nike part for shoes</p>
-					<div class="shoes">
-						<img src="images/Nike.jpg">
-					</div>
-					<div class="shoes">
-						<img src="images/nike.jpg">
+					<div class="scrollmenu">
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+						<a href="shoe1"><img src="images/nike.jpg"></a>
 					</div>
 				</div>
 				<div class="card">
 					<h1>ADIDAS</h1>
 					<p>Adidas part for shoes</p>
-					<div class="shoes">
-						<img src="images/adidas.jpg">
+					<div class="scrollmenu">
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
 					</div>
-					<div class="shoes">
-						<img src="images/adidas.jpg">
+				</div>
+				<div class="card">
+					<h1>NIKE</h1>
+					<p>Nike part for shoes</p>
+					<div class="scrollmenu">
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+						<a href="shoe1"><img src="images/nike.jpg"></a>
+					</div>
+				</div>
+				<div class="card">
+					<h1>ADIDAS</h1>
+					<p>Adidas part for shoes</p>
+					<div class="scrollmenu">
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
+						<a href="shoe1"><img src="images/adidas.jpg"></a>
 					</div>
 				</div>
 			</div>
