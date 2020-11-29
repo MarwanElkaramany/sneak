@@ -21,7 +21,7 @@ body{
 }
 video{
 	box-sizing: inherit;
-	height: 750px;
+	width: 100%;
 }
 #header{
 	background : grey;
