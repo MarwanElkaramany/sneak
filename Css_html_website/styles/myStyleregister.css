@@ -4,8 +4,9 @@
 body{
 	background: url("../images/shoesbackground.jpg") fixed;
 	background-size:cover;
+
 }
-#aboutus{
+#register{
 	background:white;
 	
 }
@@ -31,8 +32,5 @@ body{
 	transition:1s;
 }
 form{
-	padding-bottom:15px;
-}
-.info{
-	padding:30px;
+	padding-bottom:20px;
 }

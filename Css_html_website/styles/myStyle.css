@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 }
 body{
-	background: url("../images/shoesbackground.jpg");
+	background: url("../images/shoesbackground.jpg") fixed;
 	background-size:cover;
 
 	font-family : Verdana;
