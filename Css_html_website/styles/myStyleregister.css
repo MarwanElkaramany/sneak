@@ -38,12 +38,9 @@ form{
 	background : #1f6f8b;
 	text-align : center;
 	color:white;
-	position: fixed;
-  left: 0;
-  bottom: 0;
-	 width: 100%;
+
 	padding:10px;
-	margin-bottom: 10px;
+	margin-top:430px;
 	border-radius:10px;
 	clear:both;
 }
