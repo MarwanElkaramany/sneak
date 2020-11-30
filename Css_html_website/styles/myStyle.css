@@ -10,7 +10,7 @@ body{
 
 }
 #header #name  h1{
-	color: white;
+	color: black;
 	font-size:200%;
 }
 #header #name {
@@ -33,7 +33,7 @@ video{
 }
 #header{
 	position: fixed;
-	width: 99%;
+	width:95%;
 	background : grey;
 	color:white;
 	font-weight:bold;
@@ -87,7 +87,7 @@ summary::-webkit-details-marker {
 #shoetabs{
 	width : 100%;
 	padding: 0;
-	margin-top: 100px;
+	margin-top: 150px;
 }
 
 .card{
