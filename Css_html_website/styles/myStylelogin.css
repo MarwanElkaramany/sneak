@@ -34,3 +34,13 @@ body{
 form{
 	padding-bottom:20px;
 }
+#footer{
+	background : #1f6f8b;
+	text-align : center;
+	color:white;
+
+	padding:10px;
+	margin-top:10px;
+	border-radius:10px;
+	clear:both;
+}
