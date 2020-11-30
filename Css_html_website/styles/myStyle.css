@@ -4,58 +4,42 @@
 body{
 	background: url("../images/shoesbackground.jpg") fixed;
 	background-size:cover;
-
+	padding-top: 10px;
 	font-family : Verdana;
 	font-size:14px;
 
 }
-#name{
-	color:white;
+#header #name  h1{
+	color: white;
 	font-size:200%;
-	float: left;
 }
-#floatingMenu img{
+#header #name {
+	width: 51%;
+}
+#header #floatingMenu{
+		vertical-align: middle;
+		width: 48%;
+		text-align: right;
+}
+#header #floatingMenu img{
 	width: 40px;
-	float: right;
-	margin-bottom: 20px;
 }
 video{
 	box-sizing: inherit;
 	width: 100%;
 }
+.both{
+	display: inline-block;
+}
 #header{
+	position: fixed;
+	width: 99%;
 	background : grey;
 	color:white;
-	font-size: 200%;
 	font-weight:bold;
-	padding:30px;
-	border-radius:10px;.
-	margin-top: 50px;
-}
-.list1{
-	text-align: left;
-	font-size: 60%;
-	display:inline;
-}
-.list2{
-	text-align: right;
-	font-size: 60%;
-	display:inline;
-}
-#header ul{
-
-	background : grey;
-	text-align : left;
-	color:white;
 	padding:10px;
 	border-radius:10px;
-	margin-top:10px;
-	list-style-type:none;
-	font-size:110%;
-	margin-bottom:0px;
-}
-.a{
-	width: 20px;
+
 }
 
 summary::-webkit-details-marker {
@@ -100,12 +84,10 @@ summary::-webkit-details-marker {
 	border-radius:10px;
 	clear:both;
 }
-#header ul a:#name {
-	text-align: left;
-}
 #shoetabs{
 	width : 100%;
 	padding: 0;
+	margin-top: 100px;
 }
 
 .card{
@@ -116,7 +98,8 @@ summary::-webkit-details-marker {
 }
 
 .card img{
-	height:100%;
+	height:200px;
+	width: 200px;
 	border-radius:10px;
 }
 h1{
