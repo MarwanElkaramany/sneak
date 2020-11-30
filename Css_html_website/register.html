@@ -2,20 +2,41 @@
 <html>
 	<head>
 		<title>Registeration</title>
-		<link rel="stylesheet" href="styles/myStylelogin.css">
-	</head>
-	
-	<body>
-	<div id="menu"> 
-			<ul>
-				<li><a href="index.html"> Home</a></li>
-				<li><a href="login.html"> Login</a></li>
-				
-				<li><a href="contact.html"> Contact us</a></li>
-				<li><a href="aboutUs.html"> about</a></li>
+		<link rel="stylesheet" href="styles/myStyleregister.css">
+		<script>
 
-			</ul>
-			
+			function openNav() {
+  			document.getElementById("mySidenav").style.width = "250px";
+  			document.getElementById("main").style.marginLeft = "250px";
+			}
+
+
+			function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+  			document.getElementById("main").style.marginLeft = "0";
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<div id="header">
+			<div id="name" class="both">
+				<h1>	SNEAK</h1>
+			</div>
+
+			<div id="floatingMenu" class="both">
+				<img src="images/floatbutton.png" onclick="openNav()">
+			</div>
+
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="index.html">Home</a>
+				<a href="login.html">Login</a>
+				<a href="register.html">Register</a>
+				<a href="contact.html">Contact us</a>
+				<a href="aboutUs.html">about</a>
+			</div>
 		</div>
 	<div align="center">
 		<fieldset id="register" style="width:50%">
@@ -49,7 +70,7 @@
 				<input type="color" name="userColor">
 				<br>
 				<br>
-				
+
 				<label>Language:</label>
 				<br>
 				<input type="checkbox" name="lang" value="ar"><label>Arabic</label>
@@ -59,7 +80,7 @@
 				<input type="checkbox" name="lang" value="other"><label>Other</label>
 				<br>
 				<br>
-				
+
 				<label>How did you find us?</label>
 				<br>
 				<select>
@@ -68,19 +89,19 @@
 					<option>referal</option>
 				</select>
 				<br><br>
-				
+
 				<label>Write something about yourself</label>
 				<br>
 				<textarea>
-				
+
 				</textarea>
 				<br>
 				<br>
 				<input type="submit" value="Register">
 				<input type="reset" value="Clear All">
 			</form>
-		</fieldset>	
-	</div>	
+		</fieldset>
+	</div>
 	<div id="footer">&copy; SNEAK </div>
 	</body>
 

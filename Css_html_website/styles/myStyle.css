@@ -32,12 +32,12 @@ body{
 #header #floatingMenu img{
 	width: 40px;
 }
+.both{
+	display: inline-block;
+}
 video{
 	box-sizing: inherit;
 	width: 100%;
-}
-.both{
-	display: inline-block;
 }
 summary::-webkit-details-marker {
   display: none
