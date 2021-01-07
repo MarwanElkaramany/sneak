@@ -128,3 +128,29 @@ function clear2(){
 		formLabels[i].style = "color: black";
 	}
 }
+
+var counter = 1;
+
+function next(){
+	var slideshow = document.getElementById("slideshow");
+	if(counter != 4){
+		counter++;
+	}
+	else {
+		counter = 1;
+	}
+	slideshow.src = "images/"+counter+".jpg";
+}
+
+function prev(){
+	var slideshow = document.getElementById("slideshow");
+	if(counter != 1){
+		counter--;
+	}
+	else {
+		counter = 4;
+	}
+	slideshow.src = "images/"+counter+".jpg";
+}
+
+setInterval(next,2000);

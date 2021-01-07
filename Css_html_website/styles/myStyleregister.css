@@ -70,6 +70,33 @@ input[type=submit]:hover, input[type=reset]:hover {
     background-color: #007a9e;
 }
 
+#slideshow-container {
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+.next {
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	background-color: black;
+	opacity: 0.8;
+}
+
 #footer{
 	background : #1f6f8b;
 	text-align : center;
