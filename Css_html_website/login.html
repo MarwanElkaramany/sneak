@@ -17,6 +17,15 @@
 				document.getElementById("main").style.marginLeft = "0";
 			}
 
+			function login() {
+				var email = document.loginform.userEmail.value;
+				var password = document.loginform.userPassword.value;
+
+				if (email == "marwan@aast" && password == "123"){
+					window.location.href = "index.html";
+				}
+			}
+
 		</script>
 	</head>
 
@@ -43,7 +52,7 @@
 	<div align="center">
 		<fieldset id="register" style="width:50%">
 		<legend>Login</legend>
-			<form>
+			<form name="loginform">
 
 				<label>Email address: </label>
 				<input type="email" name="userEmail" placeholder="Enter email" required  size="24">
@@ -54,7 +63,7 @@
 
 				<br>
 				<br>
-				<input type="submit" value="Login">
+				<input type="button" value="Login" onclick="login();">
 				<a href="register.html"><input type="button" value="Register"></a>
 			</form>
 		</fieldset>
