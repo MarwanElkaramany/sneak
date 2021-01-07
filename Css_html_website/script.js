@@ -1,105 +1,130 @@
-function validation (){
-  var valid = true;
-  var formlabels = document.getElementByTagName("label");
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
-  var firstname = document.regform.firstname.value;
-  if (firstname == ""){
-    formlabels[0].innerHTML ="First Name: [required]";
-    formlabels[0].style.Color = "red";
-    valid = false;
-  }
-  else if (!isNaN(firstname)){
-    formlabels[0].innerHTML ="First Name: [Text only]";
-    formlabels[0].style.Color = "red";
-    valid = false;
-  }
-  else {
-    formlabels[0].innerHTML ="First Name:";
-    formlabels[0].style.Color = "black";
-    valid = (valid) ? true : false ;
-  }
 
-  var lastname = document.regform.lastname.value;
-  if (lastname == ""){
-    formlabels[1].innerHTML ="Last Name: [required]";
-    formlabels[1].style.Color = "red";
-    valid = false;
-  }
-  else if (!isNaN(lastname)){
-    formlabels[1].innerHTML ="Last Name: [Text only]";
-    formlabels[1].style.Color = "red";
-    valid = false;
-  }
-  else {
-    formlabels[1].innerHTML ="Last Name:";
-    formlabels[1].style.Color = "black";
-    valid = (valid) ? true : false ;
-  }
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
 
-  var email = document.regform.userEmail.value;
-  var at = email.indexOf("@");
-  var dot = email.indexOf(".");
-  if (email == ""){
-    formlabels[2].innerHTML ="Email address: [required]";
-    formlabels[2].style.Color = "red";
-    valid = false;
-  }
-  else if (at == -1 || dot == -1 || dot < at){
-    formlabels[2].innerHTML ="Email address: [incorrect Email]";
-    formlabels[2].style.Color = "red";
-    valid = false;
-  }
-  else {
-    formlabels[2].innerHTML ="Email address:";
-    formlabels[2].style.Color = "black";
-    valid = (valid) ? true : false ;
-  }
+function validation(){
+	var valid = true;
 
-  var password = document.regform.userPassword.value;
-  if (password == ""){
-    formlabels[3].innerHTML ="password: [required]";
-    formlabels[3].style.Color = "red";
-    valid = false;
-  }
-  else if (password.lenth < 8)){
-    formlabels[3].innerHTML ="password: [must be > 8 lenth]";
-    formlabels[3].style.Color = "red";
-    valid = false;
-  }
-  else {
-    formlabels[3].innerHTML ="password:";
-    formlabels[3].style.Color = "black";
-    valid = (valid) ? true : false ;
-  }
+	formLabels = document.getElementsByTagName("label");
 
-  var age = document.regform.userAge.value;
-  if (age == ""){
-    formlabels[4].innerHTML ="age: [required]";
-    formlabels[4].style.Color = "red";
-    valid = false;
-  }
-  else if (age < 0 || age > 100 )){
-    formlabels[4].innerHTML ="age: [must be between 0 and 100]";
-    formlabels[4].style.Color = "red";
-    valid = false;
-  }
-  else {
-    formlabels[4].innerHTML ="age:";
-    formlabels[4].style.Color = "black";
-    valid = (valid) ? true : false ;
-  }
+	var firstName = document.regForm.firstName.value;
+	if(firstName==""){
+		formLabels[0].innerHTML="First Name: [Required]";
+		formLabels[0].style="color: red";
+		valid = false;
+	}
+	else if( !isNaN(firstName)){
+		formLabels[0].innerHTML="First Name: [Text Only]";
+		formLabels[0].style="color: red";
+		valid = false;
+	}
+	else {
+		formLabels[0].innerHTML="First Name:";
+		formLabels[0].style="color: black";
+		valid = (valid) ? true : false;
+	}
 
-  var mobile = document.regform.userMobile.value;
-  if (isNan(mobile)){
-    formlabels[5].innerHTML ="mobile: [numbers only]";
-    formlabels[5].style.Color = "red";
-    valid = false;
-  }
-  else {
-    formlabels[5].innerHTML ="mobile:";
-    formlabels[5].style.Color = "black";
-    valid = (valid) ? true : false ;
-  }
+	var lastName = document.regForm.lastName.value;
+	if(lastName==""){
+		formLabels[1].innerHTML="Last Name: [Required]";
+		formLabels[1].style="color: red";
+		valid = false;
+	}
+	else if( !isNaN(lastName)){
+		formLabels[1].innerHTML="Last Name: [Text Only]";
+		formLabels[1].style="color: red";
+		valid = false;
+	}
+	else {
+		formLabels[1].innerHTML="Last Name:";
+		formLabels[1].style="color: black";
+		valid = (valid) ? true : false;
+	}
 
-  return valid;
+	var email = document.regForm.email.value;
+	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	if(email==""){
+		formLabels[2].innerHTML="Email: [Required]";
+		formLabels[2].style="color: red";
+		valid = false;
+	}
+	else if(!re.test(email)){
+		formLabels[2].innerHTML="Email: [Incorrect Email]";
+		formLabels[2].style="color: red";
+		valid = false;
+	}
+	else {
+		formLabels[2].innerHTML="Email:";
+		formLabels[2].style="color: black";
+		valid = (valid) ? true : false;
+	}
+
+	var password = document.regForm.password.value;
+	if(password == ""){
+		formLabels[3].innerHTML="Password: [Required]";
+		formLabels[3].style="color: red";
+		valid = false;
+	}
+	else if(password.length < 8){
+		formLabels[3].innerHTML="Password: [Must be > 8]";
+		formLabels[3].style="color: red";
+		valid = false;
+	}
+	else {
+		formLabels[3].innerHTML="Password:";
+		formLabels[3].style="color: black";
+		valid = (valid) ? true : false;
+	}
+
+	var age = document.regForm.age.value;
+	if(age < 0 || age > 100){
+		formLabels[4].innerHTML="Age: [Must be between 0 and 100]";
+		formLabels[4].style="color: red";
+		valid = false;
+	}
+	else if( isNaN(age)){
+		formLabels[4].innerHTML="Age: [Age must be a number]";
+		formLabels[4].style="color: red";
+		valid = false;
+	}
+	else {
+		formLabels[4].innerHTML="Age:";
+		formLabels[4].style="color: black";
+		valid = (valid) ? true : false;
+	}
+
+	var mobile = document.regForm.mobile.value;
+	if( isNaN(mobile)){
+		formLabels[5].innerHTML="Mobile: [Numbers Only]";
+		formLabels[5].style="color: red";
+		valid = false;
+	}
+	else {
+		formLabels[5].innerHTML="Mobile:";
+		formLabels[5].style="color: black";
+		valid = (valid) ? true : false;
+	}
+
+	return valid;
+}
+
+function clear2(){
+	var myArray = new Array();
+	myArray[0] = "First Name: *";
+	myArray[1] = "Last Name: *";
+	myArray[2] = "Email: *";
+	myArray[3] = "Password: *";
+	myArray[4] = "Age:";
+	myArray[5] = "Mobile:";
+	for(var i=0 ; i < myArray.length ; i++){
+		formLabels[i].innerHTML = myArray[i];
+		formLabels[i].style = "color: black";
+	}
 }

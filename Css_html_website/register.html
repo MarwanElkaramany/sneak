@@ -2,22 +2,9 @@
 <html>
 	<head>
 		<title>Registeration</title>
+		<meta charset="utf-8" />
 		<link rel="stylesheet" href="styles/myStyleregister.css">
 		<script src="script.js"></script>
-		<script>
-
-			function openNav() {
-				document.getElementById("mySidenav").style.width = "250px";
-				document.getElementById("main").style.marginLeft = "250px";
-			}
-
-
-			function closeNav() {
-				document.getElementById("mySidenav").style.width = "0";
-				document.getElementById("main").style.marginLeft = "0";
-			}
-
-		</script>
 	</head>
 
 	<body>
@@ -43,65 +30,27 @@
 	<div align="center">
 		<fieldset id="register" style="width:50%">
 		<legend>Register</legend>
-			<form onsubmit="return validation()" method="post" name="regform">
-				<label>First Name: </label>
-				<input type="text" name="firstname" placeholder="Enter First name" required size="25">
-				<br>
-				<br>
-				<label>Last Name: </label>
-				<input type="text" name="lastname" placeholder="Enter Last name" required size="27">
-				<br>
-				<br>
-				<label>Email address: </label>
-				<input type="email" name="userEmail" placeholder="Enter email" required  size="24">
-				<br>
-				<br>
-				<label>Enter Password:</label>
-				<input type="password" name="userPassword" placeholder="Enter password" required size="23">
-				<br>
-				<br>
-				<label>Age: </label>
-				<input type="number" name="userAge" placeholder="Enter Age" >
-				<br>
-				<br>
-				<label>Mobile:</label>
-				<input type="tel" name="userMobile" placeholder="Enter Mobile">
-				<br>
-				<br>
-				<label>Fav Color:</label>
-				<input type="color" name="userColor">
-				<br>
-				<br>
+		<form onsubmit="return validation()" method="post" name="regForm">
+			<label>First Name: *</label>
+			<input type="text" name="firstName" placeholder="Your First Name" size="25" />
+			<label>Last Name: *</label>
+			<input type="text" name="lastName" placeholder="Your Last Name" size="25" />
+			<label>Email: *</label>
+			<input type="text" name="email" size="25" placeholder="Your Email" />
+			<label>Password: *</label>
+			<input type="password" name="password" placeholder="Your Password" size="25" />
+			<label>Age:</label>
+			<input type="text" name="age" size="25" placeholder="Your Age" />
+			<label>Mobile:</label>
+			<input type="text" name="mobile" size="25" placeholder="Your Mobile" />
+			<label>your fav color:</label>
+			<input type="color" name="usercolor" size="25"  />
 
-				<label>Language:</label>
-				<br>
-				<input type="checkbox" name="lang" value="ar"><label>Arabic</label>
-				<br>
-				<input type="checkbox" name="lang" value="en"><label>English</label>
-				<br>
-				<input type="checkbox" name="lang" value="other"><label>Other</label>
-				<br>
-				<br>
-
-				<label>How did you find us?</label>
-				<br>
-				<select>
-					<option>google</option>
-					<option>facebook</option>
-					<option>referal</option>
-				</select>
-				<br><br>
-
-				<label>Write something about yourself</label>
-				<br>
-				<textarea>
-
-				</textarea>
-				<br>
-				<br>
-				<input type="submit" value="Register">
-				<input type="reset" value="Clear All">
-			</form>
+			<div align="center">
+			<input type="submit" value="Register" />
+			<input type="reset" value="Clear" onclick="clear2();" />
+			<div>
+		</form>
 		</fieldset>
 	</div>
 	<div id="footer">&copy; SNEAK </div>
